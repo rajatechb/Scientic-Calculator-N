@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<math.h>
+#include<dos.h>
+void graphics();
+void text();
+
+void main()
+{
+}
+void text()
+		{
+	int choice, i, a, b,c;
+	float x, y, result;
+	gotoxy(10,2);
+	scanf("%d", &choice);
+      //	if(choice == 0) exit(0);
+	switch(choice)
+
+void text()
+		{
+	int choice, i, a, b,c;
+	float x, y, result;
+	gotoxy(10,2);
+	scanf("%d", &choice);
+      //	if(choice == 0) exit(0);
+	switch(choice)
