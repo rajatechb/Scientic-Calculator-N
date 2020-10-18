@@ -172,5 +172,218 @@ void main()
 		outtextxy(553,347,"2");
 
 		       }
+		       
+void text()
+		{
+	int choice, i, a, b,c;
+	float x, y, result;
+	gotoxy(10,2);
+	scanf("%d", &choice);
+      //	if(choice == 0) exit(0);
+	switch(choice)
+	 {
+	case 1:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = x + y;
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+	case 2:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = x - y;
+	gotoxy(70,12);
+	printf("%.1f" ,result);
+	break;
+	case 3:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = x * y;
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+	case 4:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = x / y;
+	gotoxy(70,12);
+	printf("%.1f", result);
+	break;
+	case 5:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = sqrt(x);
+	gotoxy(70,12);
+	printf("%.1f", result);
+	break;
+	case 6:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = pow(x,y);
+	gotoxy(70,12);
+	printf("%.1f" ,result);
+	break;
+	case 7:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = pow(x,2);
+	gotoxy(70,10);
+	printf("%.1f",result);
+	break;
+	case 8:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = pow(x,3);
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+	case 9:
+	gotoxy(18,5);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = pow(x,-1);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 10:
+	gotoxy(70,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = exp(x);
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+    /*	case 11:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = pow(x, (1/y));
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+	case 12:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = pow(10,x);
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;     */
+	case 11:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = 1;
+	for(i = 1; i<= x; i++) {
+	result = result * i;
+	}
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+	case 12:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = (x * y) / 100;
+	gotoxy(70,12);
+	printf("%.1f",result);
+	break;
+	case 13:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(70,12);
+	result = log(x);
+	printf("%.1f",result);
+	break;
+	case 14:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	gotoxy(30,10);
+	printf("Enter Y: ");
+	scanf("%f", &y);
+	result = a%b;
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 15:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = sin(x * 3.14159 / 180.00);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 16:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = cos(x * 3.14159 / 180);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 17:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = tan(x * 3.14159 / 180);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 18:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = 1/sin(x * 3.14159 / 180);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 19:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = 1/cos(x * 3.14159 / 180);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	case 20:
+	gotoxy(30,9);
+	printf("Enter X: ");
+	scanf("%f", &x);
+	result = 1/tan(x * 3.14159 / 180);
+	gotoxy(70,12);
+	printf("%.2f",result);
+	break;
+	}
+	getch();
+	}
 
 
